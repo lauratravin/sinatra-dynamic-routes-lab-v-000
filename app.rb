@@ -2,9 +2,9 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   # Write your code here!
-  # get '/reversename/:name'
-  #   #  @name= params[:name].reverse!
-  #   #  puts @name
-  # end
+  get '/reversename/:name'
+      @name= params[:name]
+      @name.reverse!
+  end
 
 end
