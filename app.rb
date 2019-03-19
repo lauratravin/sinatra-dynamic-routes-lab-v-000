@@ -14,9 +14,9 @@ class App < Sinatra::Base
        @phrase= params[:phrase]
        @times= params[:number].to_i
        i=0
-       binding.pry
+       
        while i <= @times do
-         puts @phrase
+         @phrase
          i +=1
        end
 
