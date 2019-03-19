@@ -16,7 +16,7 @@ class App < Sinatra::Base
        i=0
        binding.pry
        while i <= @times do
-         return @phrase
+         puts @phrase
          i +=1
        end
 
