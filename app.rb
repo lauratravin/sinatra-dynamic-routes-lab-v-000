@@ -16,6 +16,8 @@ class App < Sinatra::Base
        i=0
        while i <= @times do
          @phrase
+         i=i+1
+         
        end
 
   end
