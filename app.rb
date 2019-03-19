@@ -17,5 +17,8 @@ class App < Sinatra::Base
     @text= params[:word1]+ ' '+params[:word2]+' '+params[:word3]+' '+params[:word4]+' '+params[:word5]+'.'
     erb :"say"
   end
+  get '/:operation/:number1/:number2' do
+    @result= params[number1].to_i params[:operation] params[:number2].to_i
+  end
 
 end
