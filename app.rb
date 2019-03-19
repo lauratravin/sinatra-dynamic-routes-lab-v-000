@@ -14,10 +14,10 @@ class App < Sinatra::Base
        @phrase= params[:phrase]
        @times= params[:number].to_i
        i=0
+       binding.pry
        while i <= @times do
          return @phrase
-         i=i+1
-
+         i +=1
        end
 
   end
