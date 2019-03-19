@@ -9,7 +9,7 @@ class App < Sinatra::Base
   get '/square/:number' do
     @number= params[:number].to_i.square!.t_s
      erb :"square" 
-     
+
   end
 
 end
