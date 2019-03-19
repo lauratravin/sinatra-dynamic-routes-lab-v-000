@@ -17,5 +17,4 @@ class App < Sinatra::Base
      params[:word1]
   end
 
-  end
 end
