@@ -11,6 +11,12 @@ class App < Sinatra::Base
      erb :"square"
   end
   get '/say/:number/:phrase' do
-  
+       @phrase= params[:phrase]
+       @times= params[:number].to_i
+       i=0
+       while i <= @times do
+         @phrase
+       end
+
   end
 end
