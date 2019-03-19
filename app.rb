@@ -19,6 +19,7 @@ class App < Sinatra::Base
       #    @phrase
       #    i +=1
       #  end
+      binding.pry
    params[:phrase] * params[:number].to_i
   end
 end
