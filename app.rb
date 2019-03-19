@@ -11,7 +11,11 @@ class App < Sinatra::Base
      erb :"square"
   end
   get '/say/:number/:phrase' do
-      binding.pry
      params[:phrase] * params[:number].to_i
+  end
+  get get '/say/:word1/:word2/:word3/:word4/:word5' do
+     params[:word1]
+  end
+    
   end
 end
